@@ -1,0 +1,180 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    height: 100%;
+}
+
+.custom-menu {
+    font-size: 20px;
+}
+
+.custom-container {
+    display: flex;
+    align-items: stretch;
+    margin-top: 65px;
+    height: 100%;
+}
+
+.main {
+    flex: 0 0 53.333%;
+}
+
+.sidebar {
+    flex: 0 0 48.888%;
+    background: gray;
+}
+
+.sidebar__widget {
+    position: sticky;
+    top: 65px;
+    height: 100vh;
+    display: flex;
+    padding: 20px;
+}
+
+.fullbar__widget {
+    height: 100vh;
+    display: flex;
+    padding: 75px 20px 20px 20px;
+}
+
+.mainbar__widget {
+    position: sticky;
+    top: 65px;
+    padding: 10px;
+    display: flex;
+    background-color: #fff;
+    z-index: 99999;
+
+    h1 {
+        margin-left: 45px;
+        font-size: 18px;
+    }
+
+    .left {
+        margin-left: auto;
+    }
+}
+
+.list-products {
+    padding: 20px 10px 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .card {
+        margin: 7px;
+        padding: 15px;
+        width: 30.33%;
+
+        .card-title {
+            font-size: 12px;
+            margin: 5px 0;
+            padding: 0;
+            line-height: 14px;
+        }
+
+        .card-text {
+            font-size: 11px;
+            margin: 5px 0;
+            padding: 0;
+            line-height: 12px;
+        }
+
+        .price {
+            font-size: 12px;
+            font-weight: bold;
+            text-decoration: line-through;
+        }
+
+        .discount {
+            font-size: 11px;
+            color: red;
+        }
+
+        .card-action {
+            display: flex;
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: 0;
+            margin-right: 0;
+
+            a {
+                color: #000;
+                font-size: 11px;
+                text-decoration: underline;
+            }
+
+            .add-to-cart {
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    padding: 20px;
+    border-top: 1px solid gray;
+
+    .logo {
+        display: flex;
+
+        h2 {
+            margin-left: 10px;
+            margin-top: 5px;
+        }
+    }
+
+    .right {
+        display: flex;
+        margin-left: auto;
+
+        .roho,
+        .how-it-works,
+        .inspiration,
+        .support {
+            margin-right: 100px;
+
+            h2 {
+                font-size: 16px;
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+.footer-child {
+    display: flex;
+    padding: 5px 20px;
+    font-size: 10px;
+
+    a {
+        color: #000000;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    .left {
+        margin-left: 100px;
+    }
+
+    .right {
+        margin-left: auto;
+    }
+}
+
+
